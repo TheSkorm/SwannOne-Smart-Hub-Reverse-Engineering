@@ -1,0 +1,58 @@
+  PID USER       VSZ STAT COMMAND
+    1 root      2296 S    init
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    5 root         0 SW<  [kworker/0:0H]
+    7 root         0 SW<  [khelper]
+    8 root         0 SW   [kdevtmpfs]
+  262 root         0 SW<  [writeback]
+  264 root         0 SW<  [bioset]
+  266 root         0 SW<  [kblockd]
+  363 root         0 SW   [khubd]
+  386 root         0 SW<  [cfg80211]
+  471 root         0 SW<  [rpciod]
+  485 root         0 SW   [kswapd0]
+  486 root         0 SW   [fsnotify_mark]
+  487 root         0 SW<  [nfsiod]
+  488 root         0 SW<  [crypto]
+  525 root         0 SW<  [OMAP UART0]
+  527 root         0 SW<  [OMAP UART1]
+  529 root         0 SW<  [OMAP UART3]
+  531 root         0 SW<  [OMAP UART5]
+  601 root         0 SW   [spi1]
+  649 root         0 SW<  [kpsmoused]
+  673 root         0 SW   [irq/32-TI-am335]
+  679 root         0 SW<  [krfcommd]
+  685 root         0 SW<  [deferwq]
+  723 root         0 SW   [irq/86-44e0b000]
+  738 root         0 SW   [irq/87-4802a000]
+  749 root         0 SW   [ubi_bgt0d]
+  764 root         0 SW   [ubifs_bgt0_0]
+  785 root         0 SW   [ubifs_bgt0_1]
+  790 root         0 SWN  [jffs2_gcd_mtd3]
+  868 root         0 SW<  [wl12xx_wq]
+  871 root         0 SW   [irq/163-wl18xx]
+  888 root      3072 S    supervd /etc/supervd.conf
+  896 root      3072 S    supervd /etc/supervd.conf
+  897 root      5292 S    /sbin/wpa_supplicant -Dwext -iwlan0 -c/etc/config/wp
+  900 root      3652 S    /bin/knetman operational
+  903 root      4972 S    /bin/upgraded
+  904 root      2296 S    /sbin/udhcpc -f -i eth0 -s /etc/knetman/udhcpc.scrip
+  909 root      3184 S    /usr/share/kynesim/bin/storaged
+  910 root     13660 S    /usr/share/kynesim/bin/pvrd
+  912 root      1428 S    /bin/device_manager
+  914 root      3128 S    /usr/share/kynesim/bin/hardwared
+  916 root      5248 S    /bin/hued
+  917 root     22200 S    /usr/share/kynesim/bin/aa
+  918 root      3472 S    /usr/share/kynesim/bin/zigbeed
+  924 root      2296 S    /sbin/udhcpc -f -i wlan0 -s /etc/knetman/udhcpc.scri
+  954 root      1460 S    /bin/telemetry_engine
+  956 root      1440 S    /bin/rules_engine
+  972 root      5352 S    /bin/comms_handler
+  995 root      2300 S    -sh
+ 1012 root         0 SW   [kworker/0:0]
+ 1064 root         0 SW   [kworker/u2:0]
+ 1110 root         0 SW   [kworker/u2:1]
+ 1132 root         0 SW   [kworker/u2:2]
+ 1138 root         0 SW   [kworker/0:2]
+ 1173 root         0 SW   [kworker/0:1]
