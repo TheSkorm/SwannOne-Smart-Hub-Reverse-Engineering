@@ -1,0 +1,373 @@
+ #     4108.00498235 knetman:Performing a DHCP renew
+    4108.00498479 knetman:Sending renew...
+    4108.00498696 pvrd:KBUS: ProcessAction: Incoming $.knetman.status.interface
+    4108.00498849 pvrd:KBUS: ProcessAction: Action interface dev 
+    4108.00499039 hardwared:KBUS: run: Got a message
+    4108.00499360 zigbeed:Action interface dev 
+    4108.00499566 comms_handler:RECEIVED KBUS MESSAGE DETAILS [START]
+    4108.00499723 comms_handler:MessageID: 328
+    4108.00499867 comms_handler:KBUS MESSAGE NAME: $.knetman.status.interface
+    4108.00509052 comms_handler:KBUS MESSAGE DATA: {"iface":"eth0","status":"up","fail-reason":"","dhcp-renew":"false","wifi-ssid":""}
+    4108.00509263 comms_handler:RECEIVED KBUS MESSAGE DETAILS [END]
+    4108.00509648 knetman:Lease of 172.16.0.17 obtained, lease time 604800
+    4108.00509878 hardwared:KBUS: run: Got a message
+    4108.00519241 hardwared:Rx'd network data {"status":"down"}
+    4108.00519484 hardwared:Network Status (down)
+    4108.00519653 hardwared:KBUS: ProcessNetworkStatus: Network is Down
+    4108.00519803 hardwared:Mapped  -data [*setled  0   0xff 255 255 0  3  0x10 255 255 0  & ]
+    4108.00519971 comms_handler:Attempting to add 'id'
+    4108.00520333 comms_handler:{ "dhcp-renew" : "false", "fail-reason" : "", "iface" : "eth0", "status" : "up", "wifi-ssid" : "" }
+    4108.00520502 comms_handler:Attempting to add timestamp
+    4108.00520647 comms_handler:{ "dhcp-renew" : "false", "fail-reason" : "", "id" : "328", "iface" : "eth0", "status" : "up", "wifi-ssid" : "" }
+    4108.00520790 comms_handler:Checking for stanzaId based on kbus msg id
+    4108.00520928 comms_handler:GetInReply to returned: 0
+    4108.00521067 comms_handler:In reply to serial num: 0
+    4108.00521209 comms_handler:HandleKnetManStatusInterfacegot knetman eth0 status message - triggering re-connect1
+    4108.00521346 comms_handler:if:eth0, Stat:up
+    4108.00521481 comms_handler:Beginning disconnect (User)
+    4108.00521617 comms_handler:actual disconnect 
+    4108.00521747 comms_handler:Disconnecting Silently
+    4108.00521948 comms_handler:State Change (Authenticated -> Disconnected)
+    4108.00522108 comms_handler:BROADCAST USER EVENTS
+    4108.00522243 comms_handler:{XMPPEventDataT: ustring1 = 0xb6f782c0 (""), ustring2 = 0xb6f782c0 (""), ustring3 = 0xb6f782c0 (""), ustring4 = 0xb6f782c0 (""), l = 0, c = 0, type = 31 (Disconnected), subtype = 3}
+    4108.00522531 comms_handler:comms network state message:  {"status":"down"}
+    4108.00522736 comms_handler:Reconnect Triggered 1
+    4108.00591852 knetman:Setting IP address 172.16.0.17 on eth0
+    4108.00617089 comms_handler:HUB ID OUTPUT: 00000000REDACTEDMACREDACTEDMAC
+    4108.00649019 comms_handler:Loading server certificate
+    4108.00654327 comms_handler:Loading device private key
+    4108.00655627 comms_handler:Loading device certificate chain
+    4108.00667004 comms_handler:SSL_DEBUG [START]
+    4108.00690901 comms_handler:Num of certs: 4
+    4108.00691656 comms_handler:Presenting device certs
+    4108.00692356 comms_handler:SSL_DEBUG [END]
+    4108.00693077 comms_handler:uri: 001.sct.swann.intamac.com:5222
+    4108.00693289 comms_handler:
+    4108.00696527 comms_handler:certificate: /etc/platform/001.sct.swann.intamac.com.cert
+    4108.00696775 comms_handler:URI:		001.sct.swann.intamac.com:5222
+    4108.00696935 comms_handler:
+    4108.00697092 comms_handler:Hostname:	xmpp-cls-01.ami01.intamac.com
+    4108.00697234 comms_handler:Servername:	xmpp-cls-01.ami01.intamac.com
+    4108.00697372 comms_handler:Username:	REDACTEDMAC
+    4108.00722362 knetman:Deleting routers
+
+/ # 
+/ # 
+/ #     4108.00822376 knetman:route: SIOCDELRT: No such process
+    4108.00865086 comms_handler:State Change (Disconnected -> Connecting)
+    4108.00867291 comms_handler:comms network state message:  {"status":"up"}
+    4108.00880392 hardwared:KBUS: run: Got a message
+    4108.00880635 hardwared:Rx'd network data {"status":"up"}
+    4108.00880798 hardwared:Network Status (up)
+    4108.00881029 hardwared:KBUS: ProcessNetworkStatus: Network is Up
+    4108.00881179 hardwared:Mapped  -data [{ "flush" : false, "id" : "home", "property" : "leds", "type" : 100, "value" : [ "{ \"b\" : 255, \"brightness\" : 200, \"g\" : 200, \"number\" : 0, \"r\" : 0, \"type\" : \"rgb\" }" ] }]
+    4108.00881326 hardwared:SetLeds -data [{ "flush" : false, "id" : "home", "property" : "leds", "type" : 100, "value" : [ "{ \"b\" : 255, \"brightness\" : 200, \"g\" : 200, \"number\" : 0, \"r\" : 0, \"type\" : \"rgb\" }" ] }]
+    4108.00900812 pvrd:KBUS: ProcessAction: Incoming $.knetman.status.interface
+    4108.00901105 zigbeed:Action interface dev 
+    4108.00901328 comms_handler:RECEIVED KBUS MESSAGE DETAILS [START]
+    4108.00901487 comms_handler:MessageID: 332
+    4108.00901638 comms_handler:KBUS MESSAGE NAME: $.knetman.status.interface
+    4108.00901782 comms_handler:KBUS MESSAGE DATA: {"iface":"eth0","status":"connected_eth","fail-reason":"","dhcp-renew":"true","wifi-ssid":""}
+    4108.00902013 comms_handler:RECEIVED KBUS MESSAGE DETAILS [END]
+    4108.00902157 comms_handler:Attempting to add 'id'
+    4108.00902297 comms_handler:{ "dhcp-renew" : "true", "fail-reason" : "", "iface" : "eth0", "status" : "connected_eth", "wifi-ssid" : "" }
+    4108.00902435 comms_handler:Attempting to add timestamp
+    4108.00902572 comms_handler:{ "dhcp-renew" : "true", "fail-reason" : "", "id" : "332", "iface" : "eth0", "status" : "connected_eth", "wifi-ssid" : "" }
+    4108.00902711 comms_handler:Checking for stanzaId based on kbus msg id
+    4108.00902854 comms_handler:GetInReply to returned: 0
+    4108.00902986 comms_handler:In reply to serial num: 0
+    4108.00903120 comms_handler:HandleKnetManStatusInterface : DHCP renew, so ignored
+    4108.00905144 pvrd:KBUS: ProcessAction: Action interface dev 
+    4108.00915023 knetman:Msg data:
+    4108.00915287 knetman:7b 22 69 66 22 3a 22 65 74 68 30 22 2c 22 63 6d 64 22 3a 22 72 65 6e 65 77 22 2c 22 69 70 22 3a 22 31 37 32 2e 31 36 2e 30 2e 31 37 22 2c 22 6d 61 73 6b 22 3a 22 32 35 35 2e 32 35 35 2e 32 35 35 2e 30 22 2c 22 6e 61 6d 65 2d 73 65 72 76 65 72 73 22 3a 5b 22 38 2e 38 2e 38 2e 38 22 2c 22 38 2e 38 2e 34 2e 34 22 5d 2c 22 67 61 74 65 77 61 79 73 22 3a 5b 22 31 37 32 2e 31 36 2e 30 2e 32 35 34 22 5d 7d 
+    4108.00915507 knetman:> Sending $.knetman.udhcpc [want_reply? 0]
+    4108.00915678 knetman:<Announcement '$.knetman.udhcpc' data={"if":"eth0","cmd":"...>
+    4108.00918990 knetman:> Sent message 0:331 .. 
+    4108.00982213 knetman:EINTR: soldier on
+    4109.00090243 hardwared:Set LED pkill setled = 0
+    4109.00090485 hardwared:0 from Set LED: 0 Br: 200 r: 0 g: 200 b: 255
+    4109.00090646 hardwared:KBUS: run: Got a message
+    4109.00123966 comms_handler:State Change (Connecting -> TLSHandshake)
+    4109.00124225 comms_handler:Running TLS Handshake iteration
+    4109.00124376 comms_handler:in Handshake
+    4109.00124524 comms_handler:in Handshake (2)
+    4109.00390555 comms_handler:Running TLS Handshake iteration
+    4109.00390827 comms_handler:in Handshake (2)
+    4109.00391003 comms_handler:X509TLSBioT: CERTIFICATE depth = 0, name = "/C=GB/ST=East Midlands/L=Northampton/O=Intamac Systems Limited/OU=Technical Department/CN=001.sct.swann.intamac.com/emailAddress=hardware@intamac.com", PEM = -----BEGIN CERTIFICATE-----
+    4109.00391162 comms_handler:MIIEBzCCAu+gAwIBAgIBATANBgkqhkiG9w0BAQUFADCBxTELMAkGA1UEBhMCR0Ix
+    4109.00391311 comms_handler:FjAUBgNVBAgTDUVhc3QgTWlkbGFuZHMxFDASBgNVBAcTC05vcnRoYW1wdG9uMSAw
+    4109.00391459 comms_handler:HgYDVQQKExdJbnRhbWFjIFN5c3RlbXMgTGltaXRlZDEdMBsGA1UECxMUVGVjaG5p
+    4109.00391601 comms_handler:Y2FsIERlcGFydG1lbnQxIjAgBgNVBAMTGTAwMS5zY3Quc3dhbm4uaW50YW1hYy5j
+    4109.00391745 comms_handler:b20xIzAhBgkqhkiG9w0BCQEWFGhhcmR3YXJlQGludGFtYWMuY29tMCAXDTk5MDEw
+    4109.00391884 comms_handler:MTE0MzQwMFoYDzIwOTkxMTE3MTQzNDAwWjCBxTELMAkGA1UEBhMCR0IxFjAUBgNV
+    4109.00392031 comms_handler:BAgTDUVhc3QgTWlkbGFuZHMxFDASBgNVBAcTC05vcnRoYW1wdG9uMSAwHgYDVQQK
+    4109.00394111 comms_handler:ExdJbnRhbWFjIFN5c3RlbXMgTGltaXRlZDEdMBsGA1UECxMUVGVjaG5pY2FsIERl
+    4109.00394365 comms_handler:cGFydG1lbnQxIjAgBgNVBAMTGTAwMS5zY3Quc3dhbm4uaW50YW1hYy5jb20xIzAh
+    4109.00394536 comms_handler:BgkqhkiG9w0BCQEWFGhhcmR3YXJlQGludGFtYWMuY29tMIIBIjANBgkqhkiG9w0B
+    4109.00394690 comms_handler:AQEFAAOCAQ8AMIIBCgKCAQEAr2eLIt3Oy6AJrZk4I8nCL/3KBK76qWPpyfxXxJ6Z
+    4109.00394836 comms_handler:qrH/L/em4igp2RmEB2FwYXz+sQ79Spiok4yfDIqj/Bx8sOHt+E5IJJUogS3VxNmE
+    4109.00394976 comms_handler:kV9bAMPqJT1G3mTTr3JboAE93ujJeokIw6jQGLlEOde3z4BOOTnO5KM21BR2Ed6h
+    4109.00395121 comms_handler:ecgtc5//Rh7EzZY05Wm1Wme1fMtvElmwv5l0zAEODvvp783Fukuk0OR4xotZHrS3
+    4109.00395258 comms_handler:aYOu85f55onpXKZGlBU20yodkBofI22y1CUcS89VzZi/+9vzFyhqnwuqdSESDmZ9
+    4109.00395398 comms_handler:MQth5fqeYCditXlfKeiuzSRUzjGN+scrVpB7X5+RvtsKvQIDAQABMA0GCSqGSIb3
+    4109.00395549 comms_handler:DQEBBQUAA4IBAQBDiHW00ygJ8P1keeB/WgwrLDGrg0PopnJy/GsVsaWSyYXssOIa
+    4109.00395685 comms_handler:lnXODajbNlDeNtc1QdQAP5yfgJa0BE/W0jzhXt7uKGeUxPtojtoX3t8C7hcH6tWM
+    4109.00395823 comms_handler:l+XRN2Dsb6vQrUAjcY47IZ43RlukpOmW1n6Hpt3RSO4sEy9FOHw4bcecQc5OKxT0
+    4109.00395959 comms_handler:sxBLuF3jwLfSvbCn0oO2KrV6cZvolnd/tG9/jvV5tcYwdk6KLLgZeHowTnLmzK1Z
+    4109.00396094 comms_handler:w8daqMshPzUqqXdHEd+vmyNw0rm3hdO2u8p1JP/qajn7UZ1kJHf3RQW7nL/zTR9o
+    4109.00396231 comms_handler:Fa8QryqKgf4RJFYX2uAndLgGOt2TpD+xtX4B
+    4109.00396364 comms_handler:-----END CERTIFICATE-----
+    4109.00396501 comms_handler:
+    4109.00396641 comms_handler: VERIFIED OK
+    4110.00049320 comms_handler:Running TLS Handshake iteration
+    4110.00049638 comms_handler:in Handshake (2)
+    4110.00049829 comms_handler:in TLS!
+    4110.00049977 comms_handler:Resetting XMPP stream.
+    4110.00074090 comms_handler:HUB ID OUTPUT
+    4110.00075183 comms_handler:State Change (TLSHandshake -> ReceiveStreamDeclaration)
+    4110.00077252 comms_handler:BIO wrote bytes: <?xml version="1.0" ?><stream:stream to="xmpp-cls-01.ami01.intamac.com" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" xmlns:intamac="http:// ns.intamac.com/ensov1" intamac:hubuid="00000000REDACTEDMACREDACTEDMAC">
+    4110.00078714 comms_handler:Flushed 252 of "<?xml version="1.0" ?><stream:stream to="xmpp-cls-01.ami01.intamac.com" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" xmlns:intamac="http:// ns.intamac.com/ensov1" intamac:hubuid="00000000REDACTEDMACREDACTEDMAC">"
+    4110.00079912 comms_handler:Read 0 bytes: 
+    4110.00080989 comms_handler:
+    4110.00082018 comms_handler:PENDING: 0 bytes.
+
+/ # 
+/ # 
+/ #     4111.00327706 comms_handler:BIO Read bytes: <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='14983878871440095399' from='xmpp-cls-01.ami01.intamac.com' version='1.0' xml:lang='en'>
+    4111.00327983 comms_handler:Read 197 bytes: 
+    4111.00328156 comms_handler:<?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='14983878871440095399' from='xmpp-cls-01.ami01.intamac.com' version='1.0' xml:lang='en'>
+    4111.00328322 comms_handler:State Change (ReceiveStreamDeclaration -> ReceiveStreamTagOpen)
+    4111.00328473 comms_handler:PENDING: 0 bytes.
+    4111.00328625 comms_handler:BIO Read bytes: <stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='AnudLoQ6YzangFOMngKxYf3sht0='/><register xmlns='http://jabber.org/features/iq-register'/><starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism></mechanisms></stream:features>
+    4111.00328771 comms_handler:Read 410 bytes: 
+    4111.00328922 comms_handler:<stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='AnudLoQ6YzangFOMngKxYf3sht0='/><register xmlns='http://jabber.org/features/iq-register'/><starttls xmlns='urn:ietf:params:xml:ns:xmpp-tls'/><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism></mechanisms></stream:features>
+    4111.00329058 comms_handler:State Change (ReceiveStreamTagOpen -> ReceiveStreamTagAttributes)
+    4111.00329196 comms_handler:State Change (ReceiveStreamTagAttributes -> ReceiveStreamFeaturesOpenTag)
+    4111.00329338 comms_handler:State Change (ReceiveStreamFeaturesOpenTag -> ReceiveFeatures)
+    4111.00329472 comms_handler:State Change (ReceiveFeatures -> ReceiveSASLMethods)
+    4111.00329608 comms_handler:State Change (ReceiveSASLMethods -> ReceiveFeatures)
+    4111.00329742 comms_handler:State Change (ReceiveFeatures -> ReceiveSASLPlainResult)
+    4111.00329876 comms_handler:PENDING: 0 bytes.
+    4111.00330166 comms_handler:BIO wrote bytes: <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">REDACTED_PASSWORD</auth>
+    4111.00330363 comms_handler:Flushed 112 of "<auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="PLAIN">REDACTED_PASSWORD</auth>"
+    4111.00330521 comms_handler:Read 0 bytes: 
+    4111.00330662 comms_handler:
+    4111.00330807 comms_handler:PENDING: 0 bytes.
+    4111.00725790 comms_handler:BIO Read bytes: <success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+    4111.00726038 comms_handler:Read 51 bytes: 
+    4111.00726205 comms_handler:<success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+    4111.00726350 comms_handler:State Change (ReceiveSASLPlainResult -> ReceiveSASLPlainSuccess)
+    4111.00726491 comms_handler:Resetting XMPP stream.
+    4111.00742543 comms_handler:HUB ID OUTPUT
+    4111.00743976 comms_handler:State Change (ReceiveSASLPlainSuccess -> ReceiveStreamDeclaration)
+    4111.00744916 comms_handler:PENDING: 0 bytes.
+    4111.00747632 comms_handler:BIO wrote bytes: <?xml version="1.0" ?><stream:stream to="xmpp-cls-01.ami01.intamac.com" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" xmlns:intamac="http:// ns.intamac.com/ensov1" intamac:hubuid="00000000REDACTEDMACREDACTEDMAC">
+    4111.00753165 comms_handler:Flushed 252 of "<?xml version="1.0" ?><stream:stream to="xmpp-cls-01.ami01.intamac.com" version="1.0" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" xmlns:intamac="http:// ns.intamac.com/ensov1" intamac:hubuid="00000000REDACTEDMACREDACTEDMAC">"
+    4111.00754413 comms_handler:Read 0 bytes: 
+    4111.00755501 comms_handler:
+    4111.00755721 comms_handler:PENDING: 0 bytes.
+    4112.00029189 comms_handler:BIO Read bytes: <?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='14283166397500126246' from='xmpp-cls-01.ami01.intamac.com' version='1.0' xml:lang='en'>
+    4112.00029443 comms_handler:Read 197 bytes: 
+    4112.00029604 comms_handler:<?xml version='1.0'?><stream:stream xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' id='14283166397500126246' from='xmpp-cls-01.ami01.intamac.com' version='1.0' xml:lang='en'>
+    4112.00029746 comms_handler:State Change (ReceiveStreamDeclaration -> ReceiveStreamTagOpen)
+    4112.00029890 comms_handler:PENDING: 0 bytes.
+    4112.00039160 comms_handler:BIO Read bytes: <stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='AnudLoQ6YzangFOMngKxYf3sht0='/><bind xmlns='
+    4112.00039409 comms_handler:Read 169 bytes: 
+    4112.00039576 comms_handler:<stream:features><c xmlns='http://jabber.org/protocol/caps' hash='sha-1' node='http://www.process-one.net/en/ejabberd/' ver='AnudLoQ6YzangFOMngKxYf3sht0='/><bind xmlns='
+    4112.00039728 comms_handler:State Change (ReceiveStreamTagOpen -> ReceiveStreamTagAttributes)
+    4112.00039878 comms_handler:State Change (ReceiveStreamTagAttributes -> ReceiveStreamFeaturesOpenTag)
+    4112.00040177 comms_handler:State Change (ReceiveStreamFeaturesOpenTag -> ReceiveFeatures)
+    4112.00040376 comms_handler:PENDING: 210 bytes.
+    4112.00040530 comms_handler:BIO Read bytes: urn:ietf:params:xml:ns:xmpp-bind'/><session xmlns='urn:ietf:params:xml:ns:xmpp-session'><optional/></session><sm xmlns='urn:xmpp:sm:2'/><sm xmlns='urn:xmpp:sm:3'/><csi xmlns='urn:xmpp:csi:0'/></stream:features>
+    4112.00040674 comms_handler:Read 210 bytes: 
+    4112.00040816 comms_handler:urn:ietf:params:xml:ns:xmpp-bind'/><session xmlns='urn:ietf:params:xml:ns:xmpp-session'><optional/></session><sm xmlns='urn:xmpp:sm:2'/><sm xmlns='urn:xmpp:sm:3'/><csi xmlns='urn:xmpp:csi:0'/></stream:features>
+    4112.00040956 comms_handler:State Change (ReceiveFeatures -> ReceiveUnsupportedFeatureMethods)
+    4112.00041094 comms_handler:State Change (ReceiveUnsupportedFeatureMethods -> ReceiveFeatures)
+    4112.00041229 comms_handler:State Change (ReceiveFeatures -> ReceiveBindResponseIQ)
+    4112.00041369 comms_handler:PENDING: 0 bytes.
+    4112.00041508 comms_handler:BIO wrote bytes: <iq id="28" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>smarthub</resource></bind></iq>
+    4112.00041646 comms_handler:Flushed 111 of "<iq id="28" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>smarthub</resource></bind></iq>"
+    4112.00041782 comms_handler:Read 0 bytes: 
+    4112.00042833 comms_handler:
+    4112.00043747 comms_handler:PENDING: 0 bytes.
+    4112.00297889 comms_handler:BIO Read bytes: <iq id='28' type='result'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><jid>REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub</jid></bind></iq>
+    4112.00300180 comms_handler:Read 147 bytes: 
+    4112.00300439 comms_handler:<iq id='28' type='result'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><jid>REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub</jid></bind></iq>
+    4112.00300610 comms_handler:State Change (ReceiveBindResponseIQ -> ReceiveBindStanza)
+    4112.00300763 comms_handler:Trying to parse JID string "REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub" for resourcename.
+    4112.00300906 comms_handler:Received Resourcename: smarthub
+    4112.00302719 comms_handler:State Change (ReceiveBindStanza -> Authenticated)
+    4112.00302948 comms_handler:Received User Event: 
+    4112.00303113 comms_handler:{XMPPEventDataT: ustring1 = 0x31180 (""), ustring2 = 0x31198 (""), ustring3 = 0x311b0 (""), ustring4 = 0x311c8 (""), l = 0, c = 0, type = 20 (Authenticated), subtype = 0}
+    4112.00303305 comms_handler:Authenticated stream: 
+    4112.00303466 comms_handler: client node: REDACTEDMAC
+    4112.00303611 comms_handler: client domain: xmpp-cls-01.ami01.intamac.com
+    4112.00306794 comms_handler: server domain: xmpp-cls-01.ami01.intamac.com
+    4112.00307027 comms_handler: client resource: smarthub
+    4112.00307187 comms_handler: stream ID: 14283166397500126246
+    4112.00307337 comms_handler:
+    4112.00307479 comms_handler:Sending session request
+    4112.00309654 comms_handler:server_jabber_id: mzclientxmppapp@xmpp-cls-01.ami01.intamac.com/xmppadmin
+    4112.00309902 comms_handler:Concheck:hub_jabber_id: REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub
+    4112.00310432 comms_handler:Concheck:doConnected: 
+    4112.00310612 comms_handler:PENDING: 0 bytes.
+    4112.00312951 comms_handler:BIO wrote bytes: <iq id="29" type="set" to="xmpp-cls-01.ami01.intamac.com" from="REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+    4112.00313184 comms_handler:Flushed 176 of "<iq id="29" type="set" to="xmpp-cls-01.ami01.intamac.com" from="REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>"
+    4112.00313350 comms_handler:Read 0 bytes: 
+    4112.00313666 comms_handler:
+    4112.00313876 comms_handler:PENDING: 0 bytes.
+    4112.00570532 comms_handler:BIO Read bytes: <iq type='result' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' from='xmpp-cls-01.ami01.intamac.com' id='29'/>
+    4112.00570775 comms_handler:Read 121 bytes: 
+    4112.00570943 comms_handler:<iq type='result' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' from='xmpp-cls-01.ami01.intamac.com' id='29'/>
+    4112.00571095 comms_handler:State Change (Authenticated -> ReceiveIQStanzaAttributes)
+    4112.00571240 comms_handler:RECEIVE SESSION RESPONSE
+    4112.00571380 comms_handler:RECEIVE SESSION RESPONSE
+    4112.00573443 comms_handler:BIO wrote bytes: <presence id="30"></presence>
+    4112.00573674 comms_handler:Flushed 29 of "<presence id="30"></presence>"
+    4112.00573830 comms_handler:State Change (ReceiveIQStanzaAttributes -> Authenticated)
+    4112.00573979 comms_handler:PENDING: 0 bytes.
+    4112.00576795 comms_handler:BIO wrote bytes: <presence id="31" type="subscribe" to="mzclientxmppapp@xmpp-cls-01.ami01.intamac.com/xmppadmin" from="REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"></presence>
+    4112.00578294 comms_handler:Flushed 166 of "<presence id="31" type="subscribe" to="mzclientxmppapp@xmpp-cls-01.ami01.intamac.com/xmppadmin" from="REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"></presence>"
+    4112.00578806 comms_handler:Read 0 bytes: 
+    4112.00579006 comms_handler:
+    4112.00579159 comms_handler:PENDING: 0 bytes.
+    4112.00855674 comms_handler:BIO Read bytes: <presence from='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' id='30'/>
+    4112.00855938 comms_handler:Read 135 bytes: 
+    4112.00856103 comms_handler:<presence from='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' id='30'/>
+    4112.00856258 comms_handler:State Change (Authenticated -> ReceivePresenceStanzaAttributes)
+    4112.00856487 comms_handler:BROADCAST USER EVENTS
+    4112.00856641 comms_handler:{XMPPEventDataT: ustring1 = 0x31180 ("REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"), ustring2 = 0x31198 ("REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"), ustring3 = 0x311b0 ("30"), ustring4 = 0x311c8 (""), l = 0, c = 0, type = 23 (Presence), subtype = 0}
+    4112.00856781 comms_handler:BROADCAST USER EVENTS
+    4112.00856921 comms_handler:{XMPPEventDataT: ustring1 = 0x31180 (""), ustring2 = 0x31198 (""), ustring3 = 0x311b0 (""), ustring4 = 0x311c8 (""), l = 0, c = 0, type = 27 (PresenceEnd), subtype = 0}
+    4112.00857220 comms_handler:State Change (ReceivePresenceStanzaAttributes -> Authenticated)
+    4112.00857423 comms_handler:PENDING: 0 bytes.
+    4112.00866337 comms_handler:BIO Read bytes: <presence from='user@component.use-xmpp-01/xmppadmin' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub'/>
+    4112.00866595 comms_handler:Read 112 bytes: 
+    4112.00866764 comms_handler:<presence from='user@component.use-xmpp-01/xmppadmin' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub'/>
+    4112.00866920 comms_handler:State Change (Authenticated -> ReceivePresenceStanzaAttributes)
+    4112.00867065 comms_handler:BROADCAST USER EVENTS
+    4112.00867206 comms_handler:{XMPPEventDataT: ustring1 = 0x31180 ("REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"), ustring2 = 0x31198 ("user@component.use-xmpp-01/xmppadmin"), ustring3 = 0x311b0 (""), ustring4 = 0x311c8 (""), l = 0, c = 0, type = 23 (Presence), subtype = 0}
+    4112.00867348 comms_handler:BROADCAST USER EVENTS
+    4112.00867566 comms_handler:{XMPPEventDataT: ustring1 = 0x31180 (""), ustring2 = 0x31198 (""), ustring3 = 0x311b0 (""), ustring4 = 0x311c8 (""), l = 0, c = 0, type = 27 (PresenceEnd), subtype = 0}
+    4112.00867719 comms_handler:State Change (ReceivePresenceStanzaAttributes -> Authenticated)
+    4112.00867862 comms_handler:PENDING: 0 bytes.
+    4113.00106877 comms_handler:BIO Read bytes: <iq from='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' id='push1439832267778221359' type='set'><query xmlns='jabber:iq:roster'><item ask='subscribe' subscription='none' jid='mzclientxmppapp@component.use-xmpp-01/xmppadmin'/></query></iq>
+    4113.00107146 comms_handler:Read 293 bytes: 
+    4113.00107322 comms_handler:<iq from='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' id='push1439832267778221359' type='set'><query xmlns='jabber:iq:roster'><item ask='subscribe' subscription='none' jid='mzclientxmppapp@component.use-xmpp-01/xmppadmin'/></query></iq>
+    4113.00107490 comms_handler:State Change (Authenticated -> ReceiveIQStanzaAttributes)
+    4113.00107638 comms_handler:BROADCAST USER EVENTS
+    4113.00107785 comms_handler:{XMPPEventDataT: ustring1 = 0x31180 ("REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"), ustring2 = 0x31198 ("REDACTEDMAC@xmpp-cls-01.ami01.intamac.com"), ustring3 = 0x311b0 ("push1439832267778221359"), ustring4 = 0x311c8 ("set"), l = 0, c = 0, type = 22 (IQ), subtype = 0}
+    4113.00107932 comms_handler:IQ RECEIVED
+    4113.00108077 comms_handler:State Change (ReceiveIQStanzaAttributes -> IQXMLPassthough)
+    4113.00108230 comms_handler:RECEIVE PROTOCOL STANZA: {XMPPEventDataT: ustring1 = 0xb6f782c0 (""), ustring2 = 0xb6f782c0 (""), ustring3 = 0xa4198 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 1902, type = 13 (Text), subtype = 0}
+    4113.00108368 comms_handler:RECEIVE PROTOCOL STANZA: {XMPPEventDataT: ustring1 = 0xbeb829dc ("query"), ustring2 = 0xbeb829c4 ("jabber:iq:roster"), ustring3 = 0xb6f782c0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 1907, type = 1 (ElementOpen), subtype = 0}
+    4113.00108512 comms_handler:
+    4113.00108649 comms_handler:*** POTENTIAL PROTOCOL COMMAND RECEIVED ***
+    4113.00108787 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("xmlns"), ustring2 = 0xbeb829c4 (""), ustring3 = 0x5cadc ("jabber:iq:roster"), ustring4 = 0xb6f782c0 (""), l = 1, c = 1932, type = 11 (Attribute), subtype = 0}
+    4113.00108926 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("query"), ustring2 = 0xbeb829c4 ("jabber:iq:roster"), ustring3 = 0xb6f782c0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 1933, type = 2 (ElementEndAttrs), subtype = 0}
+    4113.00109060 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xb6f782c0 (""), ustring2 = 0xb6f782c0 (""), ustring3 = 0xa41e0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 1934, type = 13 (Text), subtype = 0}
+    4113.00109198 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("item"), ustring2 = 0xbeb829c4 ("jabber:iq:roster"), ustring3 = 0xb6f782c0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 1938, type = 1 (ElementOpen), subtype = 0}
+    4113.00109399 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("ask"), ustring2 = 0xbeb829c4 ("jabber:iq:roster"), ustring3 = 0x5cadc ("subscribe"), ustring4 = 0xb6f782c0 (""), l = 1, c = 1955, type = 11 (Attribute), subtype = 0}
+    4113.00109555 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("subscription"), ustring2 = 0xbeb829c4 ("jabber:iq:roster"), ustring3 = 0x5cb1c ("none"), ustring4 = 0xb6f782c0 (""), l = 1, c = 1975, type = 11 (Attribute), subtype = 0}
+    4113.00110746 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("jid"), ustring2 = 0xbeb829c4 ("jabber:iq:roster"), ustring3 = 0x5cb5c ("mzclientxmppapp@component.use-xmpp-01/xmppadmin"), ustring4 = 0xb6f782c0 (""), l = 1, c = 2028, type = 11 (Attribute), subtype = 0}
+    4113.00111891 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("item"), ustring2 = 0xbeb829c4 ("jabber:iq:roster"), ustring3 = 0xb6f782c0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2029, type = 3 (ElementImmediateClose), subtype = 0}
+    4113.00115193 comms_handler:BROADCAST USER EVENTS
+    4113.00115430 comms_handler:{XMPPEventDataT: ustring1 = 0xb6f782c0 (""), ustring2 = 0xb6f782c0 (""), ustring3 = 0xa41e0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2031, type = 13 (Text), subtype = 0}
+    4113.00115591 comms_handler:BROADCAST USER EVENTS
+    4113.00115742 comms_handler:{XMPPEventDataT: ustring1 = 0xbeb829dc ("query"), ustring2 = 0xbeb829c4 ("jabber:iq:roster"), ustring3 = 0xb6f782c0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2037, type = 4 (ElementClosing), subtype = 0}
+    4113.00115886 comms_handler:BROADCAST USER EVENTS
+    4113.00116025 comms_handler:{XMPPEventDataT: ustring1 = 0xb6f782c0 (""), ustring2 = 0xb6f782c0 (""), ustring3 = 0xa4198 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2039, type = 13 (Text), subtype = 0}
+    4113.00116163 comms_handler:State Change (IQXMLPassthough -> Authenticated)
+    4113.00116302 comms_handler:PENDING: 0 bytes.
+    4113.00550440 comms_handler:BIO Read bytes: <iq fr
+    4113.00550687 comms_handler:Read 6 bytes: 
+    4113.00550856 comms_handler:<iq fr
+    4113.00551006 comms_handler:PENDING: 223 bytes.
+    4113.00551152 comms_handler:BIO Read bytes: om='user@component.use-xmpp-01' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' type='get' id='27951008'><get-property xmlns='Intamac:get-property' property='devices' device='hub' update='true' id='27951008'/></iq>
+    4113.00551295 comms_handler:Read 223 bytes: 
+    4113.00551432 comms_handler:om='user@component.use-xmpp-01' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' type='get' id='27951008'><get-property xmlns='Intamac:get-property' property='devices' device='hub' update='true' id='27951008'/></iq>
+    4113.00551569 comms_handler:State Change (Authenticated -> ReceiveIQStanzaAttributes)
+    4113.00554208 comms_handler:BROADCAST USER EVENTS
+    4113.00554418 comms_handler:{XMPPEventDataT: ustring1 = 0x31180 ("REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"), ustring2 = 0x31198 ("user@component.use-xmpp-01"), ustring3 = 0x311b0 ("27951008"), ustring4 = 0x311c8 ("get"), l = 0, c = 0, type = 22 (IQ), subtype = 0}
+    4113.00554577 comms_handler:IQ RECEIVED
+    4113.00554724 comms_handler:State Change (ReceiveIQStanzaAttributes -> IQXMLPassthough)
+    4113.00563628 zigbeed:Action Get dev 
+    4113.00563875 zigbeed:Got a list 
+    4113.00564039 zigbeed:Sender: comms  ID: 27951008  Dev: 
+    4113.00564189 zigbeed:Reply $.Intamac.Action.zigbeed.Get
+    4113.00564329 zigbeed:SendMessage
+    4113.00564518 zigbeed:SendProperty -$.Intamac.Action.comms.Property
+    4113.00564681 zigbeed:data = { "device" : "", "property" : "devices", "rid" : "27951008", "type" : 100, "value" : [ "zigbeed.SmartPlugNV.00137a0000027a82" ] }
+    4113.00564817 zigbeed:SendRequest
+    4113.00565086 zigbeed:SendProperty return
+    4113.00565305 comms_handler:RECEIVE PROTOCOL STANZA: {XMPPEventDataT: ustring1 = 0xb6f782c0 (""), ustring2 = 0xb6f782c0 (""), ustring3 = 0xa4198 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2164, type = 13 (Text), subtype = 0}
+    4113.00565529 comms_handler:RECEIVE PROTOCOL STANZA: {XMPPEventDataT: ustring1 = 0xbeb829dc ("get-property"), ustring2 = 0xbeb829c4 ("Intamac:get-property"), ustring3 = 0xb6f782c0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2176, type = 1 (ElementOpen), subtype = 0}
+    4113.00565711 comms_handler:
+    4113.00565871 comms_handler:*** POTENTIAL PROTOCOL COMMAND RECEIVED ***
+    4113.00566025 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("xmlns"), ustring2 = 0xbeb829c4 (""), ustring3 = 0x5cadc ("Intamac:get-property"), ustring4 = 0xb6f782c0 (""), l = 1, c = 2206, type = 11 (Attribute), subtype = 0}
+    4113.00566174 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("property"), ustring2 = 0xbeb829c4 ("Intamac:get-property"), ustring3 = 0x5cb1c ("devices"), ustring4 = 0xb6f782c0 (""), l = 1, c = 2225, type = 11 (Attribute), subtype = 0}
+    4113.00566321 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("device"), ustring2 = 0xbeb829c4 ("Intamac:get-property"), ustring3 = 0x5cb5c ("hub"), ustring4 = 0xb6f782c0 (""), l = 1, c = 2238, type = 11 (Attribute), subtype = 0}
+    4113.00566462 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("update"), ustring2 = 0xbeb829c4 ("Intamac:get-property"), ustring3 = 0x5cb9c ("true"), ustring4 = 0xb6f782c0 (""), l = 1, c = 2252, type = 11 (Attribute), subtype = 0}
+    4113.00566605 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("id"), ustring2 = 0xbeb829c4 ("Intamac:get-property"), ustring3 = 0x5cbdc ("27951008"), ustring4 = 0xb6f782c0 (""), l = 1, c = 2265, type = 11 (Attribute), subtype = 0}
+    4113.00566747 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("get-property"), ustring2 = 0xbeb829c4 ("Intamac:get-property"), ustring3 = 0xb6f782c0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2266, type = 3 (ElementImmediateClose), subtype = 0}
+    4113.00566885 comms_handler:PROCESS PROTOCOL COMMANDS STANZA
+    4113.00567018 comms_handler:JSON BUFFER NEW [START]
+    4113.00567159 comms_handler:{ "command" : "get-property", "device" : "hub", "id" : "27951008", "property" : "devices", "sender" : "comms", "update" : true, "xmlns" : "Intamac:get-property" }
+    4113.00567295 comms_handler:JSON BUFFER [END]
+    4113.00567430 comms_handler:Modified GetDeviceName
+    4113.00567564 comms_handler:current device name:zigbeed
+    4113.00567698 comms_handler:DetermineKBusBinding - device_name: zigbeed
+    4113.00567835 comms_handler:kbus_name_str: $.Intamac.Action.zigbeed.Get
+    4113.00567968 comms_handler:KBus binding: $.Intamac.Action.zigbeed.Get
+    4113.00568102 comms_handler:KBus name: $.Intamac.Action.zigbeed.Get
+    4113.00568242 comms_handler:KBus data: { "command" : "get-property", "device" : "hub", "id" : "27951008", "property" : "devices", "sender" : "comms", "update" : true, "xmlns" : "Intamac:get-property" }
+    4113.00568373 comms_handler:KBus length: 162
+    4113.00580666 comms_handler:KBus status: 0
+    4113.00580939 comms_handler:*** PENDING IQ REQUEST [START] ***
+    4113.00581116 comms_handler:msg id: 333
+    4113.00581271 comms_handler:stanza id: 27951008
+    4113.00581426 comms_handler:command: get-property
+    4113.00581575 comms_handler:NUM OF REQUESTS: 1
+    4113.00581728 comms_handler:*** PENDING IQ REQUESTS [END] ***
+    4113.00581877 comms_handler:BROADCAST USER EVENTS
+    4113.00582029 comms_handler:{XMPPEventDataT: ustring1 = 0xb6f782c0 (""), ustring2 = 0xb6f782c0 (""), ustring3 = 0xa4198 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2268, type = 13 (Text), subtype = 0}
+    4113.00582179 comms_handler:State Change (IQXMLPassthough -> Authenticated)
+    4113.00582457 comms_handler:PENDING: 0 bytes.
+    4113.00582628 comms_handler:BIO Read bytes: <iq from='user@component.use-xmpp-01' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' type='get' id='27951010'><set-time xmlns='Intamac:set-time' epoch='1507941755' id='27951010'/></iq>
+    4113.00582836 comms_handler:Read 194 bytes: 
+    4113.00583005 comms_handler:<iq from='user@component.use-xmpp-01' to='REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub' type='get' id='27951010'><set-time xmlns='Intamac:set-time' epoch='1507941755' id='27951010'/></iq>
+    4113.00583164 comms_handler:State Change (Authenticated -> ReceiveIQStanzaAttributes)
+    4113.00583307 comms_handler:BROADCAST USER EVENTS
+    4113.00583450 comms_handler:{XMPPEventDataT: ustring1 = 0x31180 ("REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"), ustring2 = 0x31198 ("user@component.use-xmpp-01"), ustring3 = 0x311b0 ("27951010"), ustring4 = 0x311c8 ("get"), l = 0, c = 0, type = 22 (IQ), subtype = 0}
+    4113.00583598 comms_handler:IQ RECEIVED
+    4113.00583740 comms_handler:State Change (ReceiveIQStanzaAttributes -> IQXMLPassthough)
+    4113.00583878 comms_handler:RECEIVE PROTOCOL STANZA: {XMPPEventDataT: ustring1 = 0xb6f782c0 (""), ustring2 = 0xb6f782c0 (""), ustring3 = 0xa4198 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2393, type = 13 (Text), subtype = 0}
+    4113.00584015 comms_handler:RECEIVE PROTOCOL STANZA: {XMPPEventDataT: ustring1 = 0xbeb829dc ("set-time"), ustring2 = 0xbeb829c4 ("Intamac:set-time"), ustring3 = 0xb6f782c0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2401, type = 1 (ElementOpen), subtype = 0}
+    4113.00584163 comms_handler:
+    4113.00584311 comms_handler:*** POTENTIAL PROTOCOL COMMAND RECEIVED ***
+    4113.00584446 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("xmlns"), ustring2 = 0xbeb829c4 (""), ustring3 = 0x5cadc ("Intamac:set-time"), ustring4 = 0xb6f782c0 (""), l = 1, c = 2427, type = 11 (Attribute), subtype = 0}
+    4113.00584587 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("epoch"), ustring2 = 0xbeb829c4 ("Intamac:set-time"), ustring3 = 0x5cb1c ("1507941755"), ustring4 = 0xb6f782c0 (""), l = 1, c = 2446, type = 11 (Attribute), subtype = 0}
+    4113.00584725 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("id"), ustring2 = 0xbeb829c4 ("Intamac:set-time"), ustring3 = 0x5cb5c ("27951010"), ustring4 = 0xb6f782c0 (""), l = 1, c = 2459, type = 11 (Attribute), subtype = 0}
+    4113.00584860 comms_handler:RECEIVE PROTOCOL COMMANDS: {XMPPEventDataT: ustring1 = 0xbeb829dc ("set-time"), ustring2 = 0xbeb829c4 ("Intamac:set-time"), ustring3 = 0xb6f782c0 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2460, type = 3 (ElementImmediateClose), subtype = 0}
+    4113.00584999 comms_handler:PROCESS PROTOCOL COMMANDS STANZA
+    4113.00589051 comms_handler:JSON BUFFER NEW [START]
+    4113.00589300 comms_handler:{ "command" : "set-time", "epoch" : "1507941755", "id" : "27951010", "sender" : "comms", "xmlns" : "Intamac:set-time" }
+    4113.00589479 comms_handler:JSON BUFFER [END]
+    4113.00589629 comms_handler:Modified GetDeviceName
+    4113.00589768 comms_handler:current device name:devmgr
+    4113.00589904 comms_handler:DetermineKBusBinding - device_name: devmgr
+    4113.00590218 comms_handler:kbus_name_str: KBUS_MSG_ACTION_NO_BINDING
+    4113.00590393 comms_handler:KBus binding: KBUS_MSG_ACTION_NO_BINDING
+    4113.00590542 comms_handler:Hub command received!
+    4113.00590684 comms_handler:set-time
+    4113.00639301 comms_handler:Sat Oct 14 01:42:35 BST 2017
+    4113.00643619 comms_handler:BIO wrote bytes: <iq id="27951010" type="result" to="mzclientxmppapp@xmpp-cls-01.ami01.intamac.com/xmppadmin" from="REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"><set-time xmlns="Intamac:set-time" rid="27951010" status="200"></set-time></iq>
+    4113.00644596 comms_handler:Flushed 231 of "<iq id="27951010" type="result" to="mzclientxmppapp@xmpp-cls-01.ami01.intamac.com/xmppadmin" from="REDACTEDMAC@xmpp-cls-01.ami01.intamac.com/smarthub"><set-time xmlns="Intamac:set-time" rid="27951010" status="200"></set-time></iq>"
+    4113.00645672 comms_handler:BROADCAST USER EVENTS
+    4113.00650532 comms_handler:{XMPPEventDataT: ustring1 = 0xb6f782c0 (""), ustring2 = 0xb6f782c0 (""), ustring3 = 0xa4198 (""), ustring4 = 0xb6f782c0 (""), l = 1, c = 2462, type = 13 (Text), subtype = 0}
+    4113.00650855 comms_handler:State Change (IQXMLPassthough -> Authenticated)
+    4113.00651035 comms_handler:PENDING: 0 bytes.
+    4113.00651190 comms_handler:RECEIVED KBUS MESSAGE DETAILS [START]
+    4113.00651338 comms_handler:MessageID: 334
+    4113.00651485 comms_handler:KBUS MESSAGE NAME: $.Intamac.Action.comms.Property
+    4113.00651623 comms_handler:KBUS MESSAGE DATA: { "device" : "", "property" : "devices", "rid" : "27951008", "type" : 100, "value" : [ "zigbeed.SmartPlugNV.00137a0000027a82" ] }
